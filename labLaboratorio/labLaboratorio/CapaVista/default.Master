@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="default.master.cs" Inherits="labLaboratorio._default" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="css/estilo1.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="estructura">
+       <header>
+       <img id="logo" src="img/logo.png" />
+       </header>
+        <nav>
+            <ul class="nav">
+                <li><a href="inicio.aspx">Inicio</a></li>
+
+                <li><a href="">Areas</a>
+                    <ul><li><a href="IngresarArea.aspx">Ingresar area</a></li>
+                        <li><a href="ConsultarArea.aspx">Consultar area</a></li>
+                        <li><a href="ModificarArea.aspx">Modificar area</a></li>
+                        <li><a href="EliminarArea.aspx">Eliminar area</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="">Libros</a>
+                     <ul>
+                         <li><a href="IngresarLibro.aspx">Ingresar libro</a></li>
+                        <li><a href="ConsultarLibro.aspx">Consultar libro</a></li>
+                        <li><a href="ModificarLibro.aspx">Modificar libro</a></li>
+                        <li><a href="EliminarLibro.aspx">Eliminar libro</a></li>
+                     </ul>
+                </li>
+
+                <li><a href="">Prestamos</a>
+                     <ul>
+                         <li><a href="RealizarPrestamo.aspx">Realizar prestamo</a></li>
+                        <li><a href="RealizarDevolucion.aspx">Realizar devolucion</a></li>
+                        
+                     </ul>
+                </li>
+
+                <li><a href="ConsultarSanciones.aspx">Sanciones</a></li>
+
+                <li><a href="">Usuarios</a>
+                     <ul>
+                         <li><a href="IngresarUsuario.aspx">Ingresar usuario</a></li>
+                        <li><a href="ConsultarUsuario.aspx">Consultar usuario</a></li>
+                        <li><a href="ModificarUsuario.aspx">Modificar usuario</a></li>
+                        <li><a href="EliminarUsuario.aspx">Eliminar usuario</a></li>
+                     </ul>
+                </li>
+      
+                      </ul>
+        </nav>
+         <section>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+           
+                
+
+        
+        
+        </asp:ContentPlaceHolder>
+        </section>
+      
+    </div>
+    </form>
+</body>
+</html>
